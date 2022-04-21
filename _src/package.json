@@ -1,0 +1,25 @@
+{
+  "name": "simplest-webpack-starter",
+  "version": "1.0.0",
+  "main": "js/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --mode development --watch",
+	"setupScaffolding": "mkdir js && touch js/main.js && echo // JS magic starts here >> js/main.js && mkdir scss && touch scss/main.scss && echo // SCSS magic starts here >> scss/main.scss"
+  },
+  "dependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1"
+  }
+}
