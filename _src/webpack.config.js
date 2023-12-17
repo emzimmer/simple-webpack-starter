@@ -9,9 +9,6 @@ module.exports = {
 			'./js/main.js',
 			'./scss/main.scss'
 		],
-		dashboard: [
-			'./scss/dashboard.scss'
-		]
 	},
 	output: {
 		path: path.resolve(__dirname,'../assets'),
