@@ -1,4 +1,4 @@
-# Simplest Webpack Starter
+# Simple Webpack Starter
 
 This only has TWO files to start with. It supplies the bare essentials for compiling/transpiling SCSS and JS.
 * package.json holds the basic package information
