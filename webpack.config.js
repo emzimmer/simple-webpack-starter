@@ -3,15 +3,18 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 module.exports = {
-	// mode: process.env.NODE_ENV,
 	entry: {
 		main: [
-			'./js/main.js',
-			'./scss/main.scss'
+			'./_src/js/main.js',
+			'./_src/scss/main.scss',
 		],
+		// anotherEntryPoint: [
+		//  './_src/js/another.js',
+		// 	'./_src/scss/another.scss',
+		// ]
 	},
 	output: {
-		path: path.resolve(__dirname,'../assets'),
+		path: path.resolve(__dirname, './dist'),
 		filename: 'js/[name].min.js',
 	},
 	module: {
@@ -30,8 +33,6 @@ module.exports = {
 				test: /\.(sa|sc|c)ss$/,
 				exclude: /(node_modules|bower_components)/,
 				use: [
-					// fallback to style-loader in development
-					// process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
 					MiniCssExtractPlugin.loader,
 					'css-loader',
 					'sass-loader',
